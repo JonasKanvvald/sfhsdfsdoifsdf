@@ -1,1 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body,html {
+    width: 100%;
+    font-style: normal;
+    font-size: 16px;
+    background: linear-gradient(90deg,rgba(26, 1, 1, 1) 0%, rgba(6, 6, 48, 1) 35%, rgba(25, 75, 87, 1) 100%);
+}
+
+header img {
+    max-width: 21%;
+    padding: 0;
+    margin-top: 390px;
+    margin-right: 80px;
+}
+
+.container {
+    width: 1865px;
+    height: 400px;
+    margin-left: 5px;
+    color: #80bcbd;
+    border-bottom: 4px solid white;
+    margin-bottom: 60px;
+    padding: 0 0 0px;
+
+}
+
+header {
+	background: linear-gradient(90deg,rgba(26, 1, 1, 1) 0%, rgba(6, 6, 48, 1) 35%, rgba(25, 75, 87, 1) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 0px;
+	align-items: center;
+    margin-top: 10px;
+}
+
+header nav {
+    float: right;
+    width: 39%;
+    padding: 0px;
+    margin-right: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    z-index: 2;
+    font-size: 55px;
+    position: relative;
+    margin-bottom: 150px;
+    bottom: 300px;
+    right: 300px;
+}
+
+header nav ul li {
+    font-family: "Peralta", serif;
+    margin-left: 15px;
+}
+header nav ul li a {
+    color: #fff;
+    font-family: "Damion", cursive;
+    margin-right: 5px;
+    text-underline-position: under;
+}
+
+header nav ul li a.active::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: #DC7000;
+    border: 10px;
+    position: relative;
+    top: 30px;
+    left: -15px;
+}
+ 
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #DC7000;
+}
+ 
+header nav ul li.btn a {
+    background: #FA9021;
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: all 500ms ease;
+    margin-right: 85px;
+    text-decoration: none;
+}
+ 
+header nav ul li.btn a:hover {
+    background: #a02604;
+}
+
+h2 {
+    position: relative;
+    margin-left: 370px;
+    font-size: 110px;
+    bottom: 300px;
+    font-family: "Luckiest Guy", cursive;
+    filter: drop-shadow(
+    5px 5px 20px #1c8fa3
+    );
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #227880,
+      0 0 82px #227880,
+      0 0 92px #227880,
+      0 0 102px #227880,
+      0 0 151px #227880
+}
+
+.toggle-btn i {
+    font-size: 40px;
+    color: white;
+}
+ 
+
+span {
+    color: #fff;
+    font-size: 91px;
+    font-family: "Rancho", cursive;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-bottom: 90px;
+}
+
+
+#logo {
+    margin-bottom: 10px;
+	float: left;
+    margin-right: 250px;
+	width: 80%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.images {
+  justify-content: space-around;
+}
+
+.heroes .row li img {
+    max-width: 88%;
+    max-height: 70%;
+    margin-left: 52px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #fff;
+    border: 4px solid white;
+    margin-top: 16px;
+
+}
+
+.heroes .row li a {
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    font-size: 59px;
+    position: relative;
+    color: #fff;
+    text-underline-position: under;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 95px;
+    font-family: "Rancho", cursive;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.cool {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cool .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row li img {
+    max-width: 80%;
+    max-height: 70%;
+    margin-left: 62px;
+    bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: #fff;
+    border: 4px solid white;
+}
+
+.cool .images {
+  justify-content: space-around;
+}
+
+.row li a {
+    display: flex;
+    justify-content: center;
+    top: 420px;
+    margin-right: 2px;
+    font-size: 35px;
+    position: relative;
+    font-family: "Rancho", cursive;
+    color: #fff;
+    text-underline-position: under;
+}
+
+footer {
+    background: #000;
+    padding: 20px 0;
+    border-top: 3px solid white;
+    margin-top: 80px;
+}
+
+footer h4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Rancho", cursive;
+    color: #aecdee;
+    font-size: 65px;
+    filter: drop-shadow(
+    5px 5px 20px #1c8fa3
+    );
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Rancho", cursive;
+}
+
+.qwer a {
+    margin: 130px 650px 40px;
+    font-family: "Rancho", cursive;
+    background: #FD511D;
+    border-radius: 11px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: #fff;
+    transform: all 500ms ease;
+    display: flex;
+    justify-content: center;
+    font-size: 39px;
+}
+
+/*2 page */
+.work {
+    padding: 40px 0;
+}
+
+.work h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    top: 20px;
+    margin: 30px 350px 80px;
+    font-family: "Rancho", cursive;
+    background: black;
+    border-radius: 10px;
+    color: #aecdee;
+    border: 3px solid white;
+}
+
+.work .blocks {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.work .blocks .block {
+    width: 35%;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 13px;
+    padding: 5px 15px 5px;
+    background: black;
+    height: 280px;
+    border: 5px solid white;
+}
+
+.work .blocks .block h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 62px;
+    font-family: "Damion", cursive;
+    color: #fff;
+    position: relative;
+    bottom: 60px;
+}
+
+.work .blocks .block .badge {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 2px;
+    border-radius: 9px;
+}
+
+.work .blocks .block .badge.purple {
+    background: #560F67;
+    color: #fff;
+    font-family: "Rancho", cursive;
+    border: 2px solid white;
+}
+
+.work .blocks .block .badge.brown {
+    background: brown;
+    color: #fff;
+     font-family: "Rancho", cursive;
+     border: 2px solid white;
+}
+
+.work .blocks .block .badge.green {
+    background: green;
+    color: #fff;
+    font-family: "Rancho", cursive;
+    border: 2px solid white;
+}
+
+.contacts {
+    padding: 0 0;
+}
+
+.contacts h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 69px;
+    text-decoration: underline;
+    font-family: "Rancho", cursive;
+    color: #aecdee;
+    text-underline-position: under;
+}
+
+.contacts p {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Rancho", cursive;
+    margin-bottom: 55px;
+    color: #aecdee;
+    text-underline-position: under;
+}
+
+.contacts .images {
+    display: flex;
+    justify-content: space-around;
+    max-width: 61%;
+    float: center;
+    margin-left: 110px;
+    margin-bottom: 45px;
+}
+
+.contacts img {
+    max-width: 40%;
+    margin-left: 66px;
+    border: 5px solid white;
+}
+
+
+footer .ending {
+    border-bottom: 10px solid black;
+    background-color: black;
+}
+
+/* 3 page */
+
+.bye {
+    inset: 40px 0px 40px 0px;
+}
+
+.bye p {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-family: "Rancho", cursive;
+    text-underline-position: under;
+}
+
+.feedback {
+    margin-top: 50px;
+    border-bottom: 2px solid (90deg,rgba(32, 31, 46, 1) 0%, rgba(29, 29, 84, 1) 35%, rgba(7, 27, 41, 1) 100%);
+    padding: 100px 0;
+    background: linear-gradient(90deg,rgba(32, 31, 46, 1) 0%, rgba(29, 29, 84, 1) 35%, rgba(7, 27, 41, 1) 100%);
+}
+
+.feedback h2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 370px;
+    font-size: 49px;
+    top: 10px;
+    font-family: "Rancho", cursive;
+    color: #aecdee;
+    text-underline-position: under;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+    text-underline-position: under;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline > div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Rancho", cursive;
+}
+
+.feedback form input,
+.feedback form textarea {
+    background: linear-gradient(90deg,rgba(32, 31, 46, 1) 0%, rgba(29, 29, 84, 1) 35%, rgba(38, 132, 150, 1) 100%);
+    border-radius: 10px;
+    border: 0.6px solid #cecece;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form input.one-line {
+    width: 96%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #DC7000;
+    font-family: "Rancho", cursive;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 25px;
+    transform: all 900ms ease;
+}
+
+.feedback form button:hover {
+    background: #FD1D1D;
+}
+
+/*page4*/
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.videos span {
+    float: center;
+    position: absolute;
+    margin-left: 620px;
+    font-size: 70px;
+    margin-top: 40px;
+    text-underline-position: under;
+}
+
+.videos video {
+    position: relative;
+    float: center;
+    left: 200px;
+    margin-top: 350px;
+    margin-left: 60px;
+    max-height: 40%;
+    max-width: 22%;
+    bottom: 90px;
+    border: 4px solid white;
+    
+}
+
+@media (max-width: 450px) {
+    @import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+    header img {
+    max-width: 29%;
+    padding: 10px;
+    margin-top: 400px;
+    margin-right: 70px;
+    font-family: "Galindo", sans-serif;
+    }
+
+    .container {
+    width: 1589px;
+    height: 410px;
+    margin-left: 5px;
+    color: #80bcbd;
+    border-bottom: 4px solid white;
+    border-top: 10px solid white;
+    margin-bottom: 60px;
+    padding: -10px 0 0;
+    font-family: "Galindo", sans-serif;
+    
+    }
+
+    body,html {
+    width: 200%;
+    font-style: normal;
+    font-family: "Galindo", sans-serif;
+    font-size: 16px;
+    background: linear-gradient(90deg,rgba(26, 1, 1, 1) 0%, rgba(6, 6, 48, 1) 35%, rgba(25, 75, 87, 1) 100%);
+    }
+
+    h2 {
+    position: relative;
+    margin-left: 440px;
+    font-size: 110px;
+    bottom: 300px;
+    font-family: "Galindo", sans-serif;
+    filter: drop-shadow(
+    5px 5px 20px #1c8fa3
+    );
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #227880,
+      0 0 82px #227880,
+      0 0 92px #227880,
+      0 0 102px #227880,
+      0 0 151px #227880
+    }
+
+    footer {
+    background: #000;
+    padding: 190px 0;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    margin-top: 80px;
+    max-height: 750%;
+    max-width: 550%;
+    margin-top: 400px;
+    font-family: "Galindo", sans-serif;
+    }
+
+    .qwer a {
+    margin: 130px 650px 40px;
+    font-family: "Galindo", sans-serif;
+    background: #FD511D;
+    border-radius: 11px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: #fff;
+    transform: all 500ms ease;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 39px;
+    }
+
+    header nav {
+    float: right;
+    width: 39%;
+    padding: 0px;
+    margin-right: 40px;
+    font-family: "Galindo", sans-serif;
+    }
+
+    header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    z-index: 2;
+    font-size: 55px;
+    position: relative;
+    margin-bottom: 150px;
+    font-family: "Galindo", sans-serif;
+    bottom: 300px;
+    right: 265px;
+    }
+
+    header nav ul li {
+    font-family: "Galindo", sans-serif;
+    margin-left: 35px;
+    }
+
+    header nav ul li a {
+    color: #fff;
+    font-family: "Galindo", sans-serif;
+    margin-right: 5px;
+    text-underline-position: under;
+    }
+
+    span {
+    color: #fff;
+    font-size: 91px;
+    font-family: "Galindo", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-bottom: 90px;
+    }
+
+    .heroes .row li a {
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    font-size: 59px;
+    position: relative;
+    color: #fff;
+    text-underline-position: under;
+    font-family: "Galindo", sans-serif;
+    }
+
+    p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 95px;
+    font-family: "Galindo", sans-serif;
+    margin-top: 50px;
+    text-decoration: underline;
+    }
+
+    .row li a {
+    display: flex;
+    justify-content: center;
+    top: 420px;
+    margin-right: 42px;
+    font-size: 35px;
+    position: relative;
+    font-family: "Galindo", sans-serif;
+    color: #fff;
+    text-underline-position: under;
+    }
+
+    footer h4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Galindo", sans-serif;
+    color: #aecdee;
+    font-size: 65px;
+    filter: drop-shadow(
+    5px 5px 20px #1c8fa3
+    );
+    }
+
+    footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Galindo", sans-serif;
+    }
+
+}
+
+
+
+@media (max-width: 380px) {
+    @import url('https://fonts.googleapis.com/css2?family=Galindo&display=swap');
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    header img {
+    max-width: 14%;
+    padding: 100px -20px;
+    margin-top: 150px;
+    font-family: "Galindo", sans-serif;
+    }
+
+    .container {
+    width: 450px;
+    height: 410px;
+    margin-left: 5px;
+    color: #80bcbd;
+    border-bottom: 4px solid white;
+    border-top: 10px solid white;
+    margin-bottom: 60px;
+    padding: -10px 0 0;
+    font-family: "Galindo", sans-serif;
+    
+    }
+
+    body,html {
+    width: 200%;
+    font-style: normal;
+    font-family: "Galindo", sans-serif;
+    font-size: 16px;
+    background: linear-gradient(90deg,rgba(26, 1, 1, 1) 0%, rgba(6, 6, 48, 1) 35%, rgba(25, 75, 87, 1) 100%);
+    }
+
+    h2 {
+    position: relative;
+    margin-left: 440px;
+    font-size: 110px;
+    bottom: 300px;
+    font-family: "Galindo", sans-serif;
+    filter: drop-shadow(
+    5px 5px 20px #1c8fa3
+    );
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #227880,
+      0 0 82px #227880,
+      0 0 92px #227880,
+      0 0 102px #227880,
+      0 0 151px #227880
+    }
+
+    footer {
+    background: #000;
+    padding: 190px 0;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    margin-top: 80px;
+    max-height: 750%;
+    max-width: 550%;
+    margin-top: 400px;
+    font-family: "Galindo", sans-serif;
+    }
+
+    .qwer a {
+    margin: 130px 650px 40px;
+    font-family: "Galindo", sans-serif;
+    background: #FD511D;
+    border-radius: 11px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: #fff;
+    transform: all 500ms ease;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 39px;
+    }
+
+    header nav {
+    float: right;
+    width: 39%;
+    padding: 0px;
+    margin-right: 40px;
+    font-family: "Galindo", sans-serif;
+    }
+
+    header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    z-index: 2;
+    font-size: 55px;
+    position: relative;
+    margin-bottom: 150px;
+    font-family: "Galindo", sans-serif;
+    bottom: 300px;
+    right: 265px;
+    }
+
+    header nav ul li {
+    font-family: "Galindo", sans-serif;
+    margin-left: 35px;
+    }
+
+    header nav ul li a {
+    color: #fff;
+    font-family: "Galindo", sans-serif;
+    margin-right: 5px;
+    text-underline-position: under;
+    }
+
+    span {
+    color: #fff;
+    font-size: 91px;
+    font-family: "Galindo", sans-serif;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-bottom: 90px;
+    }
+
+    .heroes .row li a {
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    font-size: 59px;
+    position: relative;
+    color: #fff;
+    text-underline-position: under;
+    font-family: "Galindo", sans-serif;
+    }
+
+    p {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 95px;
+    font-family: "Galindo", sans-serif;
+    margin-top: 50px;
+    text-decoration: underline;
+    }
+
+    .row li a {
+    display: flex;
+    justify-content: center;
+    top: 420px;
+    margin-right: 42px;
+    font-size: 35px;
+    position: relative;
+    font-family: "Galindo", sans-serif;
+    color: #fff;
+    text-underline-position: under;
+    }
+
+    footer h4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Galindo", sans-serif;
+    color: #aecdee;
+    font-size: 65px;
+    filter: drop-shadow(
+    5px 5px 20px #1c8fa3
+    );
+    }
+
+    footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Galindo", sans-serif;
+    }
+
+}
 
